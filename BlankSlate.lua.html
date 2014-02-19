@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>BlankSlate index - Addondoc</title>
+		<title>BlankSlate: BlankSlate.lua - Addondoc</title>
 		<link rel="stylesheet" href="../style.css" type="text/css" />
 	</head>
 	<body>
 		<div id="nav">
 			<h2><a href="../docs.html">Addon Index</a></h2>
-			<h3>BlankSlate</h3>
+			<h3><a href="../BlankSlate/index.html">BlankSlate</a></h3>
 			
 			<ul>
 				
@@ -16,7 +16,7 @@
 				
 				<li><a href="FrameNuke.lua.html">FrameNuke.lua</a></li>
 				
-				<li><a href="BlankSlate.lua.html">BlankSlate.lua</a></li>
+				<li>BlankSlate.lua</li>
 				
 				<li><a href="Aliases.lua.html">Aliases.lua</a></li>
 				
@@ -27,44 +27,20 @@
 		</div>
 
 		<div id="content">
-			<h1>BlankSlate</h1>
-			<h2>TOC data</h2>
-			<dl>
-				
-				<dt>Interface</dt>
-				<dd>50400</dd>
-				
-				<dt>Title</dt>
-				<dd>Blank Slate</dd>
-				
-				<dt>Notes</dt>
-				<dd>Wipes out the default UI, leaving a clean Lua environment for addons.</dd>
-				
-				<dt>Author</dt>
-				<dd>Predicate</dd>
-				
-				<dt>X-BlankSlate-Keep</dt>
-				<dd>BlankSlate, print</dd>
-				
-			</dl>
+			<h1>BlankSlate.lua</h1>
+			
 			
 			<h2>Function Summary</h2>
 			<dl>
 				
-				<dt><a href="BlankSlate.lua.html#BlankSlate.GetImports">BlankSlate.GetImports</a>(addon, ...)</dt>
+				<dt><a href="#BlankSlate.GetImports">BlankSlate.GetImports</a>(addon, ...)</dt>
 				<dd>Retrieves imported globals held by BlankSlate.</dd>
 				
-				<dt><a href="BlankSlate.lua.html#[TOC] X-BlankSlate-Import">[TOC] X-BlankSlate-Import</a>(...)</dt>
+				<dt><a href="#[TOC] X-BlankSlate-Import">[TOC] X-BlankSlate-Import</a>(...)</dt>
 				<dd>A TOC metadata field allowing addons to request a copy of a default UI global to be held by BlankSlate.</dd>
 				
-				<dt><a href="BlankSlate.lua.html#[TOC] X-BlankSlate-Keep">[TOC] X-BlankSlate-Keep</a>(...)</dt>
+				<dt><a href="#[TOC] X-BlankSlate-Keep">[TOC] X-BlankSlate-Keep</a>(...)</dt>
 				<dd>A TOC metadata field allowing addons to request that certain globals be kept.</dd>
-				
-				<dt><a href="Functions.lua.html#error">error</a>(msg)</dt>
-				<dd>A basic error handler that outputs debugging information to the developer console.</dd>
-				
-				<dt><a href="Functions.lua.html#print">print</a>(...)</dt>
-				<dd>Prints to the developer console.</dd>
 				
 			</dl>
 			
@@ -116,40 +92,6 @@
 				<ul>
 					
 					<li><pre class="code">...</pre>: List of global variable names. May be separated by any characters which cannot be part of a Lua identifier (e.g. commas or whitespace).</li>
-					
-				</ul>
-				
-				
-				
-
-				
-			</div>
-			
-			<div class="doc">
-				<h3><a name="error"></a>error(msg)</h3>
-				<p>A basic error handler that outputs debugging information to the developer console. This replaces the default error handler, which loads a Blizzard addon that is broken by BlankSlate. BlankSlate-aware error handling addons should OptDep BlankSlate and use seterrorhandler() to override this.</p>
-				
-				<h4>Parameters</h4>
-				<ul>
-					
-					<li><pre class="code">msg</pre>: Error message.</li>
-					
-				</ul>
-				
-				
-				
-
-				
-			</div>
-			
-			<div class="doc">
-				<h3><a name="print"></a>print(...)</h3>
-				<p>Prints to the developer console. This replaces WoW's default print handler, which outputs to a chat frame that is removed by BlankSlate.</p>
-				
-				<h4>Parameters</h4>
-				<ul>
-					
-					<li><pre class="code">...</pre>: Content to print.</li>
 					
 				</ul>
 				
