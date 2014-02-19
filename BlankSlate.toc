@@ -1,0 +1,4 @@
+## Interface: 50400
+## Title: BlankSlate
+## Notes: Wipes out the default UI, leaving a clean Lua environment for addons.
+## Author: Predicate
