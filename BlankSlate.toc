@@ -1,4 +1,11 @@
 ## Interface: 50400
-## Title: BlankSlate
+## Title: Blank Slate
 ## Notes: Wipes out the default UI, leaving a clean Lua environment for addons.
 ## Author: Predicate
+## X-BlankSlate-Keep: BlankSlate, print
+
+Functions.lua
+FrameNuke.lua
+BlankSlate.lua
+Aliases.lua
+CinematicControl.lua
