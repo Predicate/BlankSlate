@@ -31,7 +31,7 @@ do
 			local i = 2
 			local nextstr = GetAddOnMetadata(index, field..i)
 			while nextstr do
-				str = str .. nextstr
+				str = str.." "..nextstr
 				nextstr = GetAddOnMetadata(index, field..i)
 				i = i + 1
 			end
