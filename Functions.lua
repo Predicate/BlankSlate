@@ -7,11 +7,11 @@
 seterrorhandler(function(msg)
 	ConsoleAddMessage("***ERROR***")
 	ConsoleAddMessage(msg)
-	if debugstack(4) ~= "" then
+	if debugstack(4) and debugstack(4) ~= "" then
 		ConsoleAddMessage("   [@trace]")
 		debugstack(4):gsub("[^\n]+", ConsoleAddMessage, 5)
 	end
-	if debuglocals(4) ~= "" then
+	if debuglocals(4) and debuglocals(4) ~= "" then
 		ConsoleAddMessage("   [@locals]")
 		debuglocals(4):gsub("[^\n]+", ConsoleAddMessage, 10)
 	end
