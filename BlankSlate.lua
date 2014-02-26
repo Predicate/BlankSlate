@@ -88,8 +88,7 @@ FrameWipe(GameTooltip)
 --restore basic tooltip functionality
 GameTooltip:SetScript("OnTooltipSetDefaultAnchor", function(self) self:SetOwner(UIParent, "ANCHOR_CURSOR") end)
 
---setfenv() would be a faster alternative to string.dump(), but it taints functions that can break secure templates.
-local function isCfunc(f) return (type(f) == "function" and not pcall(string.dump, f)) end
+local function isCfunc(f) return (type(f) == "function" and not pcall(setfenv, f, getfenv(f))) end
 
 local curkey
 for tmp in next, _G, curkey do

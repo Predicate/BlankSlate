@@ -79,6 +79,7 @@ _G.setglobal = nil
 --debug-only C functions
 _G.debugbreak = nil
 _G.debugdump = nil
+_G.debughook = nil
 _G.debuginfo = nil
 _G.debugload = nil
 _G.debugprint = nil
