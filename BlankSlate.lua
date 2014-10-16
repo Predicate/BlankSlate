@@ -25,8 +25,9 @@ keepers = {
 }
 
 do
+	local playername = UnitName("player")
 	local function parseTOCstring(index, field, func)
-		local str, enabled, loadable = GetAddOnMetadata(index, field), select(4,GetAddOnInfo(index))
+		local str, enabled, loadable = GetAddOnMetadata(index, field), GetAddOnEnableState(playername, index), select(4,GetAddOnInfo(index))
 		if str and enabled and loadable then
 			local i = 2
 			local nextstr = GetAddOnMetadata(index, field..i)

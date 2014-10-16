@@ -13,7 +13,7 @@ local aliases = { --redundant aliases added by WoW
 	tremove = table.remove,
 	sort = table.sort,
 	wipe = table.wipe,
-	
+
 	-- Math library
 	abs = math.abs,
 	--acos = function (x) return math.deg(math.acos(x)) end
@@ -36,11 +36,10 @@ local aliases = { --redundant aliases added by WoW
 	--??? pow = math.pow
 	rad = math.rad,
 	random = math.random,
-	--randomseed = math.randomseed
 	--sin = function (x) return math.sin(math.rad(x)) end
 	sqrt = math.sqrt,
 	--tan = function (x) return math.tan(math.rad(x)) end
-	
+
 	-- String library
 	strbyte = string.byte,
 	strchar = string.char,
@@ -59,7 +58,7 @@ local aliases = { --redundant aliases added by WoW
 	strtrim = string.trim,
 	strsplit = string.split,
 	strjoin = string.join,
-	
+
 }
 
 for k, v in pairs(aliases) do
@@ -73,13 +72,10 @@ table.foreach = nil
 table.foreachi = nil
 table.getn = nil
 _G.gcinfo = nil
-_G.getglobal = nil
-_G.setglobal = nil
 
 --debug-only C functions
 _G.debugbreak = nil
 _G.debugdump = nil
-_G.debughook = nil
 _G.debuginfo = nil
 _G.debugload = nil
 _G.debugprint = nil
