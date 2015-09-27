@@ -3,13 +3,16 @@ do
 	_G[addon] = _G[addon] or {}
 	setfenv(1, setmetatable(namespace, { __index = _G }))
 end
-local handlers = { --All known widget handlers from wowprogramming.com as of February 2014 (patch 5.4.7)
+local handlers = { --All known widget handlers from FrameXML/`strings Wow.exe` as of September 2015 (patch 6.2.2)
 	"OnAnimFinished",
+	"OnArrowPressed",
 	"OnAttributeChanged",
+	"OnButtonUpdate",
 	"OnChar",
 	"OnCharComposition",
 	"OnClick",
 	"OnColorSelect",
+	"OnCooldownDone",
 	"OnCursorChanged",
 	"OnDisable",
 	"OnDoubleClick",
@@ -20,8 +23,10 @@ local handlers = { --All known widget handlers from wowprogramming.com as of Feb
 	"OnEnable",
 	"OnEnter",
 	"OnEnterPressed",
+	"OnError",
 	"OnEscapePressed",
 	"OnEvent",
+	"OnExternalLink",
 --	"OnFinished", --Animation/AnimationGroup only
 	"OnHide",
 	"OnHorizontalScroll",
@@ -29,6 +34,11 @@ local handlers = { --All known widget handlers from wowprogramming.com as of Feb
 	"OnHyperlinkEnter",
 	"OnHyperlinkLeave",
 	"OnInputLanguageChanged",
+	"OnJoystickAxisMotion",
+	"OnJoystickButtonDown",
+	"OnJoystickButtonUp",
+	"OnJoystickHatMotion",
+	"OnJoystickStickMotion",
 	"OnKeyDown",
 	"OnKeyUp",
 	"OnLeave",

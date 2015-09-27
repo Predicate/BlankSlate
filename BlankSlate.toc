@@ -1,4 +1,4 @@
-## Interface: 60000
+## Interface: 60200
 ## Title: Blank Slate
 ## Notes: Wipes out the default UI, leaving a clean Lua environment for addons.
 ## Author: Predicate
