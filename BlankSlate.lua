@@ -54,8 +54,8 @@ keepers = {
 do
 	local playername = UnitName("player")
 	local function parseTOCstring(index, field, func)
-		local str, enabled, loadable = GetAddOnMetadata(index, field), GetAddOnEnableState(playername, index), select(4,GetAddOnInfo(index))
-		if str and enabled and loadable then
+		local str, enabled = GetAddOnMetadata(index, field), GetAddOnEnableState(playername, index)
+		if str and enabled then
 			local i = 2
 			local nextstr = GetAddOnMetadata(index, field..i)
 			while nextstr do
