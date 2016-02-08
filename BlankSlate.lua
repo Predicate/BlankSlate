@@ -44,11 +44,20 @@ keepers = {
 	C_Vignettes = true,
 	C_WowTokenPublic = true,
 
+	--7.0 API tables
+	C_AdventureMap = true,
+	C_ArtifactUI = true,
+	C_ChallengeMode = true,
+	C_NamePlate = true,
+	C_TalkingHead = true,
+	C_TradeSkillUI = true,
+	C_Transmog = true,
+	C_TransmogCollection = true,
+
 	--Frames accessed from C
 	WorldFrame = true,
 	UIParent = true,
 	GameTooltip = true,
-	--["NamePlate%d"] = true,
 }
 
 do
