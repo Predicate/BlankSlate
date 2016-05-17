@@ -48,6 +48,9 @@ keepers = {
 	C_AdventureMap = true,
 	C_ArtifactUI = true,
 	C_ChallengeMode = true,
+	C_ClassTrial = true,
+	C_LootJournal = true,
+	C_MapCanvas = true,
 	C_NamePlate = true,
 	C_TalkingHead = true,
 	C_TradeSkillUI = true,
@@ -58,6 +61,9 @@ keepers = {
 	WorldFrame = true,
 	UIParent = true,
 	GameTooltip = true,
+
+	--7.0 crasher
+	DAMAGE_TEXT_FONT = true,
 }
 
 do
